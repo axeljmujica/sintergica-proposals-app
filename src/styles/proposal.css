@@ -1,0 +1,34 @@
+.proposal-doc {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: white;
+  padding: 56px 64px;
+  max-width: 8.5in;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+.proposal-doc h1 { font-size: 24pt; color: #1F3A5F; font-weight: 700; margin: 0 0 6pt; line-height: 1.2; }
+.proposal-doc h2 { font-size: 16pt; color: #1F3A5F; font-weight: 700; margin: 22pt 0 10pt; line-height: 1.3; padding-bottom: 4pt; border-bottom: 1.5pt solid #2E75B6; }
+.proposal-doc h3 { font-size: 13pt; color: #2E75B6; font-weight: 600; margin: 16pt 0 6pt; }
+.proposal-doc h4 { font-size: 11pt; color: #1F3A5F; font-weight: 700; margin: 10pt 0 4pt; }
+.proposal-doc p { margin: 0 0 8pt; }
+.proposal-doc ul, .proposal-doc ol { margin: 4pt 0 10pt; padding-left: 20pt; }
+.proposal-doc li { margin-bottom: 4pt; }
+.proposal-doc table { width: 100%; border-collapse: collapse; margin: 8pt 0 14pt; font-size: 10.5pt; }
+.proposal-doc th { background: #2E75B6; color: white; padding: 7pt 10pt; text-align: left; font-weight: 600; border: 0.5pt solid #2E75B6; }
+.proposal-doc td { padding: 7pt 10pt; border: 0.5pt solid #CCCCCC; vertical-align: top; }
+.proposal-doc tr:nth-child(even) td { background: #F5F8FB; }
+.proposal-doc .cover { margin-bottom: 24pt; padding-bottom: 16pt; border-bottom: 1.5pt solid #2E75B6; }
+.proposal-doc .cover-brand { font-size: 36pt; font-weight: 700; color: #1F3A5F; letter-spacing: -0.5pt; margin: 0; }
+.proposal-doc .cover-tag { font-size: 11pt; color: #666; font-style: italic; margin: 2pt 0 24pt; }
+.proposal-doc .cover-label { font-size: 11pt; color: #2E75B6; font-weight: 600; letter-spacing: 0.5pt; margin: 0 0 6pt; }
+.proposal-doc .cover-title { font-size: 26pt; color: #1F3A5F; font-weight: 700; margin: 0 0 6pt; line-height: 1.15; }
+.proposal-doc .cover-sub { font-size: 14pt; color: #2E75B6; margin: 0 0 24pt; }
+.proposal-doc .cover-meta { font-size: 11pt; line-height: 1.6; }
+.proposal-doc .cover-meta strong { color: #1F3A5F; font-size: 13pt; }
+.proposal-doc .pricing-row td { font-weight: 600; background: #E8F0F8 !important; }
+.proposal-doc .pricing-total td { font-weight: 700; background: #2E75B6 !important; color: white; }
+.proposal-doc blockquote { border-left: 3pt solid #2E75B6; padding: 8pt 14pt; margin: 10pt 0; background: #F5F8FB; color: #444; font-style: italic; }
