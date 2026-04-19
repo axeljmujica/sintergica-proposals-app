@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { requireAuth } from '@/lib/api-helpers';
 import { compileSystemPromptText } from '@/lib/prompts/compile-system-prompt';
-import { anthropic, ANTHROPIC_MODEL } from '@/lib/anthropic';
 
 export const runtime = 'nodejs';
 
@@ -14,17 +13,8 @@ export async function GET(req: Request) {
 
   const prompt = await compileSystemPromptText({ industria, tipo });
 
-  let tokens: number | null = null;
-  try {
-    const res = await anthropic.messages.countTokens({
-      model: ANTHROPIC_MODEL,
-      system: prompt,
-      messages: [{ role: 'user', content: 'placeholder' }],
-    });
-    tokens = res.input_tokens;
-  } catch {
-    // silent
-  }
+  // Estimación: ~4 caracteres por token (suficiente para la preview)
+  const tokens = Math.round(prompt.length / 4);
 
   return NextResponse.json({ prompt, tokens });
 }
